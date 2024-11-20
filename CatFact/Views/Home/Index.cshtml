@@ -1,1 +1,56 @@
-﻿
+﻿<style type="text/css">
+
+    .basic-label
+    {
+        color:brown;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn 
+    {
+        background-color: #FFEF00;
+        color: #000000;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn:hover
+    {
+        background-color: #FF0000;
+    }
+
+    .btn:focus 
+    {
+        background-color:blueviolet;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    body
+    {
+        background-image: url("/koty.png");
+        /* Źródło: https://www.canva.com/design/DAGW7M6ZavI/LK4j_BSGbDD6Y1Twp1SutA/edit?ui=eyJBIjp7IkEiOiJkb3dubG9hZF9wbmciLCJGIjp0cnVlfSwiRyI6eyJEIjp7IkQiOnsiQT8iOiJDIn19fX0 */
+        background-size:inherit;
+    }
+
+</style>
+
+<body>
+    <div class="form-group">
+        <label class="basic-label">Kliknij przycisk, aby dodać do pliku nowy fakt o kotach!</label>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Dodaj nową linijkę" class="btn btn-primary" />
+    </div>
+</body>
