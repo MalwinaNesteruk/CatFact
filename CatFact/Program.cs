@@ -1,3 +1,6 @@
+using CatFact.Services;
+using CatFact.Services.Interfaces;
+
 namespace CatFact
 {
     public class Program
@@ -8,6 +11,7 @@ namespace CatFact
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IFileService, FileService>();
 
             var app = builder.Build();
 
