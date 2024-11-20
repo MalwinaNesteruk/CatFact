@@ -12,6 +12,7 @@ namespace CatFact
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<IFileService, FileService>();
+            builder.Services.AddScoped<IInfoGetterService, InfoGetterService>();
 
             var app = builder.Build();
 

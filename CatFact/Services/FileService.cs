@@ -4,12 +4,12 @@ namespace CatFact.Services
 {
     public class FileService : IFileService
     {
-        public void AddTextToFile()
+        public void AddTextToFile(string line)
         {
             var filePath = "infoAboutCats.txt";
             using (StreamWriter file = File.AppendText(filePath))
             {
-                file.WriteLine("Nowy zapis");
+                file.WriteLine(line);
             }
         }
     }

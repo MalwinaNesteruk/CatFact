@@ -2,6 +2,6 @@
 {
     public interface IFileService
     {
-        void AddTextToFile();
+        void AddTextToFile(string line);
     }
 }
