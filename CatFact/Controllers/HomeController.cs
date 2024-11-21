@@ -23,9 +23,16 @@ namespace CatFact.Controllers
         [HttpPost]
         public IActionResult GetLine()
         {
-            string line = _infoGetterService.GetLineFromApi();
-            _fileService.AddTextToFile(line);
-            return View("Index", line);
+            try
+            {
+                string line = _infoGetterService.GetLineFromApi();
+                _fileService.AddTextToFile(line);
+                return View("Index", "Dodano: " + line);
+            }
+            catch (Exception ex)
+            {
+                return View("Index", "Błąd: " + ex.Message);
+            }
         }
     }
 }
